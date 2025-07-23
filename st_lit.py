@@ -273,9 +273,25 @@ def display_analysis():
     st.pyplot(fig)
     
 def welcome():
-    st.title('this page wellcomes you')
-    st.markdown('welcome')
+    st.markdown('# welcome')
+
+    st.markdown('''This is my first projecct in streamlit and i hope you like it ''')
     
+    st.markdown('''This project is about credit risk predection, which is a crucial aspect of the banking and financial industry.
+                The goal is to predict whether a Loan Application will be approved or not based on various features such as credit history,
+                income, and other financial indicators. The project uses a deep learning model to make these predictions.''')
+    st.markdown('''The project includes a user-friendly interface built with Streamlit,
+                allowing users to input loan appliction details and receive predictions on whether the application is likely to be approved or not.''')
+    
+    st.markdown('''The project also includes data analysis and visualization components to help users understand the factors influencing loan approval decisions''')
+        
+    st.markdown('''The project is built using python and leverages popular libraries such as Tensorflow, pandas, numpy, matplotlib, seaborn, and scikit-learn for data processing, model training, and visualization.''')
+    
+    st.markdown('''The project is agreat example of how machine learning can be applied to real-world problems in the financial scector,
+                helping banks and financial institutions make more infiormed decisions about loan applictions.''')
+    
+    
+# This is the main function that controls the flow of the application 
 def main_appli():
     st.sidebar.title('📁 Navigation')
     page=st.sidebar.radio('Go to',['Welcome','display_model','display_analysis'])
