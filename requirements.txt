@@ -1,5 +1,6 @@
+--only-binary=numpy
 streamlit==1.27.2
 pandas==1.5.3
-numpy==1.23.5
+numpy==1.24.4
 matplotlib
 seaborn
